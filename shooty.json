@@ -1,0 +1,1012 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.companyname.shooty",
+    "projectUuid": "10b689a2-6486-45b5-8183-370810860e8a",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.1",
+    "name": "Topdown Shooter Template - Shooty",
+    "author": "Ulises Freitas <ulises.freitas@gmail.com>",
+    "windowWidth": 640,
+    "windowHeight": 360,
+    "latestCompilationDirectory": "D:\\topdown-shooter-gd-template\\1.0.1",
+    "maxFPS": 0,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "android-icon-144.png",
+      "android-icon-192": "android-icon-192.png",
+      "android-icon-36": "android-icon-36.png",
+      "android-icon-48": "android-icon-48.png",
+      "android-icon-72": "android-icon-72.png",
+      "android-icon-96": "android-icon-96.png",
+      "desktop-icon-512": "desktop-icon-512.png",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-1024": "ios-icon-1024.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-20": "ios-icon-20.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png",
+      "ios-icon-87": "ios-icon-87.png"
+    },
+    "loadingScreen": {
+      "showGDevelopSplash": false
+    },
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "Assets/sounds/player_bullet.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\sounds\\player_bullet.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/obj_blood_particle-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\obj_blood_particle-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Assets/sounds/crashbones.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\sounds\\crashbones.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/fonts/PressStart2P-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Assets\\fonts\\PressStart2P-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/shooty-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\shooty-7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/tree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\tree.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/rocks-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\rocks-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/base-grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\base-grass.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-floor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-floor.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/coin-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\coin-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/coin-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\coin-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/coin-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\coin-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/potion-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\potion-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/potion-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\potion-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/potion-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\potion-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/potion-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\potion-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/mountain-complete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\mountain-complete.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/sounds/146727_fins_energy.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\sounds\\146727_fins_energy.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/sounds/coin_drop.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\sounds\\coin_drop.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/title.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\title.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/IDLE/000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\IDLE\\000.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/IDLE/001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\IDLE\\001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/IDLE/002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\IDLE\\002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/WALK/000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\WALK\\000.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/WALK/001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\WALK\\001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/WALK/002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\WALK\\002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/WALK/003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\WALK\\003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/ATTACK/000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\ATTACK\\000.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/ATTACK/001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\ATTACK\\001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/ATTACK/002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\ATTACK\\002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/ATTACK/003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\ATTACK\\003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/enemies/snake/ATTACK/004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\enemies\\snake\\ATTACK\\004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Assets/fonts/Press-Start2P-Golden-Gradient-32.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "Assets\\fonts\\Press-Start2P-Golden-Gradient-32.fnt",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/fonts/Press-Start2P-Golden-Gradient-32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\fonts\\Press-Start2P-Golden-Gradient-32.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/credits.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\credits.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/credits-bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\credits-bg.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/controls.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\controls.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/obj_close-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\obj_close-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/obj_close-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\obj_close-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/obj_restart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\obj_restart.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/obj_plant-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\obj_plant-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_bullet-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_bullet-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_bullet-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_bullet-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_bullet-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_bullet-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/obj_start_btn-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\obj_start_btn-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_cursor-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_cursor-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/hud/hud-ui.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\hud\\hud-ui.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_flag-8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_flag-8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_node_marker-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_node_marker-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_cursor_2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_cursor_2-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_gun_r.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\player\\obj_gun_r.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/scenarios/obj_grass-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\scenarios\\obj_grass-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-20.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/music/00-main-music.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\music\\00-main-music.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/music/01-im-the-boss.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\music\\01-im-the-boss.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "g_player_speed",
+      "type": "number",
+      "value": 80
+    },
+    {
+      "name": "g_total_kills",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/splashscene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/gamescene"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/mainglobals"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/hudevents"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/hud"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/pause"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/gameover"
+    }
+  ],
+  "externalSourceFiles": []
+}

@@ -1,0 +1,68 @@
+{
+  "associatedLayout": "GameScene",
+  "name": "GAMEOVER",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "GAMEOVER",
+      "locked": false,
+      "name": "obj_home",
+      "persistentUuid": "b1871ef8-3061-450d-93fe-8b661465393a",
+      "width": 64,
+      "x": 156,
+      "y": 192,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GAMEOVER",
+      "locked": false,
+      "name": "obj_game_over",
+      "persistentUuid": "cf6fb225-b0ed-4fd0-a373-8aa0af3875c4",
+      "width": 0,
+      "x": 168,
+      "y": 128,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "GAMEOVER",
+      "locked": false,
+      "name": "obj_restart",
+      "persistentUuid": "b467c28e-00d6-4234-ae17-0a0ec7b2e7a5",
+      "width": 64,
+      "x": 396,
+      "y": 192,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridB": 255,
+    "gridG": 180,
+    "gridHeight": 4,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridR": 158,
+    "gridType": "rectangular",
+    "gridWidth": 4,
+    "snap": true,
+    "windowMask": true,
+    "zoomFactor": 0.7916666870117186
+  }
+}

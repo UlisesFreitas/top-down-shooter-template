@@ -1,0 +1,36 @@
+{
+  "associatedLayout": "GameScene",
+  "name": "HUD",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "HUD",
+      "locked": false,
+      "name": "obj_hud",
+      "persistentUuid": "6bc49429-7699-4440-8a43-6b5d18f8002c",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridB": 255,
+    "gridG": 180,
+    "gridHeight": 8,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridR": 158,
+    "gridType": "rectangular",
+    "gridWidth": 8,
+    "snap": true,
+    "windowMask": true,
+    "zoomFactor": 0.9166666748046874
+  }
+}
