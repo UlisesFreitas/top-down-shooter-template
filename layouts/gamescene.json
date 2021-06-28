@@ -4562,7 +4562,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": true,
+              "disabled": false,
               "folded": true,
               "name": "Music",
               "source": "",
