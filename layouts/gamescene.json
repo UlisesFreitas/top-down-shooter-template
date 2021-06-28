@@ -2072,6 +2072,22 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "obj_aim",
+      "persistentUuid": "1d8d167c-8e4a-451c-915c-91ce64be717f",
+      "width": 0,
+      "x": 24,
+      "y": -32,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -4128,6 +4144,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "obj_aim",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "obj_aim",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Assets/player/obj_aim-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 4,
+                    "y": 4
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 4,
+                    "y": 4
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -4197,7 +4252,7 @@
       "colorR": 126,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4503,39 +4558,53 @@
               "parameters": []
             },
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": true,
+              "folded": true,
+              "name": "Music",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "StopMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "1"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StopMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Assets\\music\\01-im-the-boss.mp3",
+                        "1",
+                        "yes",
+                        "20",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets\\music\\01-im-the-boss.mp3",
-                    "1",
-                    "yes",
-                    "20",
-                    "1"
-                  ],
-                  "subInstructions": []
+                  "events": []
                 }
               ],
-              "events": []
+              "parameters": []
             }
           ]
         }
@@ -4548,7 +4617,7 @@
       "colorR": 0,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Game Running",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4571,7 +4640,36 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "obj_aim",
+                "=",
+                "obj_player.X()",
+                "=",
+                "obj_player.Y()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "obj_aim",
+                "MouseX(\"\",0)",
+                "MouseY(\"\",0)",
+                "0",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -4609,260 +4707,21 @@
                     "\"\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "obj_cursor",
+                    "=",
+                    "1000"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
-            },
-            {
-              "colorB": 74,
-              "colorG": 74,
-              "colorR": 74,
-              "creationTime": 0,
-              "disabled": false,
-              "folded": true,
-              "name": "Mouse shoot & camera shake",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "z"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "KeyPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Space"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "MouseButtonPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Left"
-                          ],
-                          "subInstructions": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "obj_player",
-                            "<",
-                            "MouseX(\"\",0)"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "obj_bullet",
-                            "obj_gun.PointX(\"bullet_right\")",
-                            "obj_gun.PointY(\"bullet_right\")",
-                            "\"\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceVersPos"
-                          },
-                          "parameters": [
-                            "obj_bullet",
-                            "MouseX(\"\",0)",
-                            "MouseY(\"\",0)",
-                            "200",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangeScale"
-                          },
-                          "parameters": [
-                            "obj_bullet",
-                            "=",
-                            "0.5"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "obj_player",
-                            ">",
-                            "MouseX(\"\",0)"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "obj_bullet",
-                            "obj_gun.PointX(\"bullet_right\")",
-                            "obj_gun.PointY(\"bullet_right\")",
-                            "\"\""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceVersPos"
-                          },
-                          "parameters": [
-                            "obj_bullet",
-                            "MouseX(\"\",0)",
-                            "MouseY(\"\",0)",
-                            "200",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangeScale"
-                          },
-                          "parameters": [
-                            "obj_bullet",
-                            "=",
-                            "0.5"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "PlaySoundCanal"
-                          },
-                          "parameters": [
-                            "",
-                            "Assets\\sounds\\player_bullet.wav",
-                            "22",
-                            "",
-                            "10",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "CameraShake::CameraShake"
-                          },
-                          "parameters": [
-                            "",
-                            "2",
-                            "2",
-                            "\"\"",
-                            "0",
-                            "0.25",
-                            "1",
-                            "1",
-                            "0.08",
-                            "",
-                            ""
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    }
-                  ]
-                }
-              ],
-              "parameters": []
             },
             {
               "colorB": 74,
@@ -4911,7 +4770,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Mouse",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5145,7 +5004,7 @@
               "colorR": 0,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Player",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5156,7 +5015,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Move",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -5578,7 +5437,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Player collisions -> Enviroments",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -5884,7 +5743,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": true,
+                  "folded": false,
                   "name": "Guns",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -6031,7 +5890,7 @@
                   "colorR": 74,
                   "creationTime": 0,
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "name": "Bullet collisions",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -6090,7 +5949,7 @@
                 },
                 {
                   "disabled": false,
-                  "folded": false,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -6190,6 +6049,193 @@
                             "\"\"",
                             "\"Blur\"",
                             "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 74,
+              "colorG": 74,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "Mouse shoot & camera shake",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "z"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Space"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "obj_bullet",
+                            "obj_gun.PointX(\"bullet_right\")",
+                            "obj_gun.PointY(\"bullet_right\")",
+                            "\"\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeScale"
+                          },
+                          "parameters": [
+                            "obj_bullet",
+                            "=",
+                            "0.5"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "obj_bullet",
+                            "=",
+                            "obj_aim.Angle()"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "obj_bullet",
+                            "obj_aim.Angle()",
+                            "200",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "Assets\\sounds\\player_bullet.wav",
+                            "22",
+                            "",
+                            "10",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CameraShake::CameraShake"
+                          },
+                          "parameters": [
+                            "",
+                            "2",
+                            "2",
+                            "\"\"",
+                            "0",
+                            "0.25",
+                            "1",
+                            "1",
+                            "0.08",
+                            "",
+                            ""
                           ],
                           "subInstructions": []
                         }
@@ -6924,7 +6970,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {

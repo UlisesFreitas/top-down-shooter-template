@@ -15,7 +15,7 @@
     "scaleMode": "nearest",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Topdown Shooter Template - Shooty",
     "author": "Ulises Freitas <ulises.freitas@gmail.com>",
     "windowWidth": 640,
@@ -942,6 +942,15 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/player/obj_aim-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets/player/obj_aim-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

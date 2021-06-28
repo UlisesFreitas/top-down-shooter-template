@@ -1617,20 +1617,6 @@
                 ""
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "Assets\\music\\00-main-music.mp3",
-                "yes",
-                "20",
-                "1"
-              ],
-              "subInstructions": []
             }
           ],
           "events": [
@@ -1889,6 +1875,43 @@
                         "obj_hud_txt_delete",
                         "=",
                         "\"Delete data\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": true,
+              "folded": false,
+              "name": "Music",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "Assets\\music\\00-main-music.mp3",
+                        "yes",
+                        "20",
+                        "1"
                       ],
                       "subInstructions": []
                     }
